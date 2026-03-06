@@ -1,0 +1,53 @@
+name: whatsapp_bot_container
+description: "WhatsApp Bot Container — Flutter + Baileys Node.js"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Estado e Injeção de Dependência ──────────────────────────────────────
+  provider: ^6.1.2
+
+  # ── Banco de Dados Local ─────────────────────────────────────────────────
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+
+  # ── Serviço em Segundo Plano (Android) ───────────────────────────────────
+  # Mantém o app ativo como Foreground Service para que o Node.js não seja morto
+  flutter_foreground_task: ^8.12.1
+
+  # ── Wakelock — Impede que a CPU durma ────────────────────────────────────
+  wakelock_plus: ^1.2.8
+
+  # ── Permissões em Runtime ────────────────────────────────────────────────
+  permission_handler: ^11.3.1
+
+  # ── Utilitários ──────────────────────────────────────────────────────────
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+
+  # ── UI ───────────────────────────────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/nodejs-project/
+
+  # Fontes personalizadas (opcional)
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf

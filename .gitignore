@@ -1,0 +1,47 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Android
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/.symlinks/
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/Runner.xcworkspace/
+*.xcworkspace
+
+# Node.js
+assets/nodejs-project/node_modules/
+assets/nodejs-project/auth_info/
+assets/nodejs-project/media/
+assets/nodejs-project/deleted_messages.json
+
+# Logs e dados sensíveis
+*.log
+*.env
+.env.*
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
