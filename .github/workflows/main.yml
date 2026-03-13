@@ -1,0 +1,40 @@
+name: Flutter Build APK
+
+on:
+  push:
+    branches: [ "main", "master" ] # Dispara o build ao dar push nessas branches
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17' # Versão estável para o Flutter atual
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0' # Ou a versão que você usa
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build APK Debug
+        # O -v (verbose) ajuda a ver exatamente onde o erro acontece
+        run: flutter build apk --debug -v 
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: build/app/outputs/flutter-apk/app-debug.apk
+          
