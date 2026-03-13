@@ -16,8 +16,7 @@ def flutterVersionCode = localProperties.getProperty("flutter.versionCode") ?: "
 def flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0"
 
 android {
-    # Mude para o seu identificador 'maggi' se preferir manter o padrão dos seus outros apps
-    namespace "com.example.whatsapp_bot_container" 
+    namespace "com.example.whatsapp_bot_container"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -36,8 +35,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.whatsapp_bot_container"
-        # Mantido em 21 para o seu J7 Neo (Android 9 / API 28)
-        minSdkVersion 21 
+        minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -46,31 +44,15 @@ android {
 
     buildTypes {
         release {
-            # Recomendado habilitar futuramente para diminuir o APK no J7
             minifyEnabled false
             shrinkResources false
             signingConfig signingConfigs.debug
         }
-        debug {
-            applicationIdSuffix ".debug"
-            debuggable true
-        }
     }
-
-    packagingOptions {
-        jniLibs {
-            useLegacyPackaging = true
-        }
-    }
-}
-
-flutter {
-    source "../.."
 }
 
 dependencies {
-    # Removida a variável direta para evitar o erro de 'null version'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0" 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
     implementation "androidx.multidex:multidex:2.0.1"
     implementation "androidx.core:core-ktx:1.13.1"
 }
