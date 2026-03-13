@@ -87,10 +87,21 @@ whatsapp_bot_container/
 │   │       └── kotlin/.../MainActivity.kt
 │   ├── build.gradle                       # Configuração raiz Android
 │   ├── settings.gradle
-│   └── gradle.properties
+│   ├── gradle.properties
+│   ├── gradlew                            # Wrapper Gradle (Linux/macOS)
+│   ├── gradlew.bat                        # Wrapper Gradle (Windows)
+│   └── gradle/wrapper/gradle-wrapper.properties # Configuração do wrapper
 ├── ios/
+│   ├── Runner.xcodeproj/
+│   │   ├── project.pbxproj                # Configuração do projeto Xcode
+│   │   └── project.xcworkspace/           # Workspace do Xcode
+│   │       └── contents.xcworkspacedata
 │   └── Runner/
-│       └── Info.plist                     # Permissões iOS
+│       ├── AppDelegate.swift              # Delegate principal do iOS
+│       ├── main.m                         # Ponto de entrada Objective-C
+│       ├── Info.plist                     # Permissões iOS
+│       ├── Base.lproj/LaunchScreen.storyboard # Tela de splash
+│       └── Assets.xcassets/               # Assets de imagem
 ├── pubspec.yaml                           # Dependências Flutter
 └── README.md                              # Este arquivo
 ```
@@ -128,9 +139,11 @@ flutter pub get
 
 ### Passo 3 — Build Android (APK)
 
+> **Importante:** Evite usar `flutter build appbundle --debug`. O `appbundle` é para produção (`--release`), e o `--debug` pode causar conflitos. Para depuração ou testes, use `apk`.
+
 ```bash
-# APK de debug (para testes)
-flutter build apk --debug
+# APK de debug (para testes e depuração detalhada)
+flutter build apk --debug -v # O -v (verbose) mostra logs detalhados do Gradle
 
 # APK de release (para distribuição)
 flutter build apk --release --split-per-abi
@@ -310,10 +323,10 @@ sock.ev.on('messages.update', (updates) => {
 | Pacote | Versão | Finalidade |
 |--------|--------|-----------|
 | `provider` | ^6.1.2 | Gerenciamento de estado |
-| `sqflite` | ^2.3.3 | Banco de dados local SQLite |
-| `flutter_foreground_task` | ^8.12.1 | Foreground Service Android |
-| `wakelock_plus` | ^1.2.8 | Manter CPU ativa |
-| `permission_handler` | ^11.3.1 | Permissões em runtime |
+| `sqflite` | ^2.3.3+1 | Banco de dados local SQLite |
+| `flutter_foreground_task` | ^9.2.1 | Foreground Service Android |
+| `wakelock_plus` | ^1.4.0 | Manter CPU ativa |
+| `permission_handler` | ^12.0.1 | Permissões em runtime |
 | `path_provider` | ^2.1.4 | Caminhos de arquivo |
 
 ### Node.js (package.json)

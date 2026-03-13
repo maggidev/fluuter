@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0E114002B95412A0091375B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E113FF2B95412A0091375B /* AppDelegate.swift */; };
+		C0E114022B95412A0091375B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E114012B95412A0091375B /* main.m */; };
+		C0E114042B95412A0091375B /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E114032B95412A0091375B /* GeneratedPluginRegistrant.m */; };
+		C0E114062B95412A0091375B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0E114052B95412A0091375B /* Info.plist */; };
+		C0E114082B95412A0091375B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E114072B95412A0091375B /* Assets.xcassets */; };
+		C0E1140A2B95412A0091375B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E114092B95412A0091375B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0E113FF2B95412A0091375B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0E114012B95412A0091375B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0E114032B95412A0091375B /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		C0E114052B95412A0091375B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "text.plist.xml"; path = Info.plist; sourceTree = "<group>"; };
+		C0E114072B95412A0091375B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0E114092B95412A0091375B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0E1140B2B95412A0091375B /* main.dart */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.dart; path = ../../lib/main.dart; sourceTree = SOURCE_ROOT; };
+		C0E1140C2B95412A0091375B /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flutter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E1140D2B95412A0091375B /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E1140E2B95412A0091375B /* Generated.xcconfig */ = {isa = PBXFileReference; includeInIndex = 0; path = Flutter/Generated.xcconfig; sourceTree = SOURCE_ROOT; };
+		C0E1140F2B95412A0091375B /* Debug.xcconfig */ = {isa = PBXFileReference; path = Flutter/Debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		C0E114102B95412A0091375B /* Release.xcconfig */ = {isa = PBXFileReference; path = Flutter/Release.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0E113F82B95412A0091375B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E1140C2B95412A0091375B /* Flutter.framework in Frameworks */,
+				C0E1140D2B95412A0091375B /* App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0E113F22B95412A0091375B = {
+			isa = PBXGroup;
+			children = (
+				C0E113F72B95412A0091375B /* Runner */,
+				C0E1140B2B95412A0091375B /* main.dart */,
+				C0E1140E2B95412A0091375B /* Generated.xcconfig */,
+				C0E1140F2B95412A0091375B /* Debug.xcconfig */,
+				C0E114102B95412A0091375B /* Release.xcconfig */,
+				C0E114112B95412A0091375B /* Frameworks */,
+				C0E114122B95412A0091375B /* Products */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		C0E113F72B95412A0091375B /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				C0E113FF2B95412A0091375B /* AppDelegate.swift */,
+				C0E114012B95412A0091375B /* main.m */,
+				C0E114032B95412A0091375B /* GeneratedPluginRegistrant.m */,
+				C0E114052B95412A0091375B /* Info.plist */,
+				C0E114072B95412A0091375B /* Assets.xcassets */,
+				C0E114092B95412A0091375B /* LaunchScreen.storyboard */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		C0E114112B95412A0091375B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0E1140C2B95412A0091375B /* Flutter.framework */,
+				C0E1140D2B95412A0091375B /* App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0E114122B95412A0091375B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0E113F62B95412A0091375B /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0E113F52B95412A0091375B /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E114132B95412A0091375B /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				C0E113F82B95412A0091375B /* Frameworks */,
+				C0E113F92B95412A0091375B /* Resources */,
+				C0E113FA2B95412A0091375B /* Sources */,
+				C0E113FB2B95412A0091375B /* Copy Flutter Resources */,
+				C0E113FC2B95412A0091375B /* Thin Binary */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = C0E113F62B95412A0091375B /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0E113F32B95412A0091375B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "com.example";
+				TargetAttributes = {
+					C0E113F52B95412A0091375B = {
+						CreatedOnToolsVersion = 15.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C0E113F02B95412A0091375B /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			mainGroup = C0E113F22B95412A0091375B;
+			productRefGroup = C0E114122B95412A0091375B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0E113F52B95412A0091375B /* Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0E113F92B95412A0091375B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E114062B95412A0091375B /* Info.plist in Resources */,
+				C0E114082B95412A0091375B /* Assets.xcassets in Resources */,
+				C0E1140A2B95412A0091375B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0E113FA2B95412A0091375B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E114002B95412A0091375B /* AppDelegate.swift in Sources */,
+				C0E114022B95412A0091375B /* main.m in Sources */,
+				C0E114042B95412A0091375B /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E113FD2B95412A0091375B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_ERROR;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_PRAGMA_PACK = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_ERROR;
+				CLANG_WARN_UNINITIALIZED_AUTORELEASED_VARIABLE = YES;
+				CLANG_WARN_UNKNOWN_PRAGMAS = YES;
+				CLANG_WARN_UNUSEDFUNCTIONS = YES;
+				CLANG_WARN_VEC_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) \"$(FLUTTER_ROOT)/bin/cache/artifacts/engine/ios/Flutter.framework\" \"$(FLUTTER_ROOT)/bin/cache/artifacts/engine/ios-arm64/Flutter.framework\"";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)" "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTORELEASED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MIGRATE_PROJECT_TO_SWIFT = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.whatsappBotContainer;
+				PRODUCT_NAME = "whatsapp_bot_container";
+				SWIFT_EMIT_MODULE_INTERFACE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+		};
+		C0E113FE2B95412A0091375B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_ERROR;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_PRAGMA_PACK = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_ERROR;
+				CLANG_WARN_UNINITIALIZED_AUTORELEASED_VARIABLE = YES;
+				CLANG_WARN_UNKNOWN_PRAGMAS = YES;
+				CLANG_WARN_UNUSEDFUNCTIONS = YES;
+				CLANG_WARN_VEC_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited) \"$(FLUTTER_ROOT)/bin/cache/artifacts/engine/ios/Flutter.framework\" \"$(FLUTTER_ROOT)/bin/cache/artifacts/engine/ios-arm64/Flutter.framework\"";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)" "NDEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTORELEASED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MIGRATE_PROJECT_TO_SWIFT = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.whatsappBotContainer;
+				PRODUCT_NAME = "whatsapp_bot_container";
+				SWIFT_EMIT_MODULE_INTERFACE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E113F02B95412A0091375B /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E113FD2B95412A0091375B /* Debug */,
+				C0E113FE2B95412A0091375B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E114132B95412A0091375B /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E113FD2B95412A0091375B /* Debug */,
+				C0E113FE2B95412A0091375B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+/* End XCVersionGroup section */
+	};
+	rootObject = C0E113F32B95412A0091375B /* Project object */;
+}
