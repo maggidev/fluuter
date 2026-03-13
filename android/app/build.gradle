@@ -12,28 +12,22 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-def flutterVersionCode = localProperties.getProperty("flutter.versionCode")
-if (flutterVersionCode == null) {
-    flutterVersionCode = "1"
-}
-
-def flutterVersionName = localProperties.getProperty("flutter.versionName")
-if (flutterVersionName == null) {
-    flutterVersionName = "1.0"
-}
+def flutterVersionCode = localProperties.getProperty("flutter.versionCode") ?: "1"
+def flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0"
 
 android {
-    namespace "com.example.whatsapp_bot_container"
+    # Mude para o seu identificador 'maggi' se preferir manter o padrão dos seus outros apps
+    namespace "com.example.whatsapp_bot_container" 
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 
     sourceSets {
@@ -42,15 +36,17 @@ android {
 
     defaultConfig {
         applicationId "com.example.whatsapp_bot_container"
-        minSdkVersion 21 // Alterado para 21 para compatibilidade com Android 9 (API 28) e plugins
+        # Mantido em 21 para o seu J7 Neo (Android 9 / API 28)
+        minSdkVersion 21 
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        multiDexEnabled true // Habilitado para lidar com o limite de métodos
+        multiDexEnabled true
     }
 
     buildTypes {
         release {
+            # Recomendado habilitar futuramente para diminuir o APK no J7
             minifyEnabled false
             shrinkResources false
             signingConfig signingConfigs.debug
@@ -73,7 +69,8 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version" // Usar jdk8 para compatibilidade
+    # Removida a variável direta para evitar o erro de 'null version'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0" 
     implementation "androidx.multidex:multidex:2.0.1"
     implementation "androidx.core:core-ktx:1.13.1"
 }
