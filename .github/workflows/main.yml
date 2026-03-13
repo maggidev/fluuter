@@ -2,7 +2,7 @@ name: Flutter Build APK
 
 on:
   push:
-    branches: [ "main", "master" ] # Dispara o build ao dar push nessas branches
+    branches: [ "main", "master" ]
   pull_request:
     branches: [ "main", "master" ]
 
@@ -11,29 +11,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17' # Versão estável para o Flutter atual
+          java-version: '17'
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.0' # Ou a versão que você usa
+          # Versão 3.24.0 ou superior para suportar o Dart 3.5.0 exigido pelo flutter_lints 5.0.0
+          flutter-version: '3.24.0'
           channel: 'stable'
+          cache: true
 
       - name: Install dependencies
         run: flutter pub get
 
       - name: Build APK Debug
-        # O -v (verbose) ajuda a ver exatamente onde o erro acontece
-        run: flutter build apk --debug -v 
+        # O --split-per-abi gera APKs menores para cada tipo de processador
+        run: flutter build apk --debug --split-per-abi -v
 
-      - name: Upload APK
+      - name: Upload APKs
         uses: actions/upload-artifact@v4
+        with:
+          name: bot-whatsapp-apks
+          path: build/app/outputs/flutter-apk/*.apk
         with:
           name: app-debug
           path: build/app/outputs/flutter-apk/app-debug.apk
